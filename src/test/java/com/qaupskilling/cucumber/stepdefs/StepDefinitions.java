@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assertions;
 
 public class StepDefinitions {
 
+
     @Given("An empty Maven Cucumber project")
     public void i_create_empty_maven_cucumber_project() {
         System.out.println("An empty Maven Cucumber project");
