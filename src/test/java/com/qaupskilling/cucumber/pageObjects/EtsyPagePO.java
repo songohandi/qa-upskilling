@@ -48,4 +48,36 @@ public class EtsyPagePO {
 
         Assertions.assertTrue(pass);
     }
+
+    public void elementIsVisible(String string) {
+        WebElement element = getElementFromGherkinStringParameter(string);
+        Assertions.assertTrue(elementIsVisible(element));
+
+    }
+
+    public boolean elementIsVisible(WebElement element) {
+        element = new WebDriverWait(driver, 5).until(
+                ExpectedConditions.visibilityOf(element)
+        );
+        return element.isDisplayed();
+    }
+
+    private WebElement getElementFromGherkinStringParameter(String locator) {
+        WebElement result = null;
+
+        switch (locator) {
+            case "Popular list":
+                result = popularList;
+                break;
+            case "Signing button":
+                result = signInButton;
+                break;
+            case "Selections area":
+                result = selections;
+                break;
+            case "Subscribe area":
+                result = subscribeArea;
+        }
+        return result;
+    }
 }
