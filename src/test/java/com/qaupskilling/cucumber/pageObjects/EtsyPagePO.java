@@ -27,7 +27,7 @@ public class EtsyPagePO {
     public WebElement subscribeArea;
 
     @FindBy(xpath = "//*[@id='content']/div/div[6]/div/div/div/div/div[1]/div[1]/a/h2")
-    public WebElement selections ;
+    public WebElement selections;
 
     public EtsyPagePO(WebDriver driver) {
         this.driver = driver;

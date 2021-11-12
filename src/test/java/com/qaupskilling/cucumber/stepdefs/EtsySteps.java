@@ -62,6 +62,9 @@ public class EtsySteps {
     }
 
 
+    /*
+    This one is not using POM yet, but I used it instead of four different methods to check elements visibility
+     */
     @Then("{string} is visible")
     public void elementIsVisible(String string) {
         String locator = getLocator(string);
