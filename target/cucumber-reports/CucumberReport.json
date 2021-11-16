@@ -1,0 +1,1259 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-16T09:40:39.307Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5296133600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create user - happy path",
+        "description": "",
+        "id": "user-creation-verification;create-user---happy-path",
+        "after": [
+          {
+            "result": {
+              "duration": 798620700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 225102400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the application is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.theApplicationIsUpAndRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8249078000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I create users with next parameters:",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.iCreateUserWithNextParameters(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "John Doe",
+                  "Test automation engineer"
+                ]
+              },
+              {
+                "cells": [
+                  "Hawer Dretwota",
+                  "QA"
+                ]
+              },
+              {
+                "cells": [
+                  "Wziut Trudek",
+                  "Dev"
+                ]
+              },
+              {
+                "cells": [
+                  "Den Tupa",
+                  "BA"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4511600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "response returns user id",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.responseReturnsUserId()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "User creation verification",
+    "description": "",
+    "id": "user-creation-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api/create_user.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-16T09:40:54.032Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2849619600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Get user with id and verify email",
+        "description": "",
+        "id": "user-api-verifications;get-user-with-id-and-verify-email;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 810558600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 500100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user service is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_service_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 327877600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fetch the information about user with id 7",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 43
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.i_fetch_the_information_about_user_with_id(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116310600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user has a email \"michael.lawson@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"michael.lawson@reqres.in\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_has_a_email(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:40:58.171Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2884697700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Get user with id and verify email",
+        "description": "",
+        "id": "user-api-verifications;get-user-with-id-and-verify-email;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1183661800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 502200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user service is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_service_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 261696400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fetch the information about user with id 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 43
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.i_fetch_the_information_about_user_with_id(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20555800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user has a email \"tracey.ramos@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tracey.ramos@reqres.in\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_has_a_email(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:41:02.533Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2869909300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Get user with id and verify email",
+        "description": "",
+        "id": "user-api-verifications;get-user-with-id-and-verify-email;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 907195400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 501300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user service is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_service_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 220589300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fetch the information about user with id 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 43
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.i_fetch_the_information_about_user_with_id(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20555200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user has a email \"charles.morris@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"charles.morris@reqres.in\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_has_a_email(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "User API verifications",
+    "description": "",
+    "id": "user-api-verifications",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api/get_user_outline.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-16T09:41:06.578Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2987469100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User have been registered successfully",
+        "description": "",
+        "id": "register-user;user-have-been-registered-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 973727300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 501800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the application is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.theApplicationIsUpAndRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 222092500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user registers with email \"eve.holt@reqres.in\" and password \"machine gun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"eve.holt@reqres.in\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"machine gun\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.userRegistersWithEmailAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68683600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "registration \"have been\" completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"have been\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.registrationCompletionStatus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:41:10.851Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2825164700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "User have not been registered without password",
+        "description": "",
+        "id": "register-user;user-have-not-been-registered-without-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1036253800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 497900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the application is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.theApplicationIsUpAndRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 224084600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user registers with email \"eve.holt@reqres.in\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"eve.holt@reqres.in\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.userRegistersWithEmailAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1002700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "registration \"have not been\" completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"have not been\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.registrationCompletionStatus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Register user",
+    "description": "",
+    "id": "register-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api/register.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-16T09:41:14.952Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2626116200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Given User have been registered successfully",
+        "description": "",
+        "id": "register-user;given-user-have-been-registered-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1297894200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 501300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the application is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.theApplicationIsUpAndRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 206551400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user registers with email \"eve.holt@reqres.in\" and password \"machine gun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"eve.holt@reqres.in\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"machine gun\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.userRegistersWithEmailAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "registration \"have been\" completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"have been\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.registrationCompletionStatus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:41:19.099Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2741034300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Given User have been registered successfully",
+        "description": "",
+        "id": "register-user;given-user-have-been-registered-successfully;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 868804900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 499700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the application is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.theApplicationIsUpAndRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228611100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user registers with email \"eve.holt@reqres.in\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"eve.holt@reqres.in\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.userRegistersWithEmailAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 501000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "registration \"have not been\" completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"have not been\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.registrationCompletionStatus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:41:22.951Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3655752300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Given User have been registered successfully",
+        "description": "",
+        "id": "register-user;given-user-have-been-registered-successfully;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1063822200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 501000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the application is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.theApplicationIsUpAndRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271725300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user registers with email \"\" and password \"machinegun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"machinegun\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.userRegistersWithEmailAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1004000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "registration \"have not been\" completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"have not been\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.registrationCompletionStatus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Register user",
+    "description": "",
+    "id": "register-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api/register_outline.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-16T09:41:27.952Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3293295200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Get all users for subscription audition",
+        "description": "",
+        "id": "user-api-verifications;get-all-users-for-subscription-audition",
+        "after": [
+          {
+            "result": {
+              "duration": 1038298300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 501400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user service is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_service_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164943400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fetch all users from page 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 28
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.iFetchAllUsersFromPage(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50635100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user list contains 6 users",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 19
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.userListContainsUsers(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:41:32.512Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3320859800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Get user with id \u003d 7",
+        "description": "",
+        "id": "user-api-verifications;get-user-with-id-\u003d-7",
+        "after": [
+          {
+            "result": {
+              "duration": 1191446400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 500500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user service is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_service_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 170957300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I fetch the information about user with id 7",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 43
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.i_fetch_the_information_about_user_with_id(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20052600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user has a email \"michael.lawson@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"michael.lawson@reqres.in\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_has_a_email(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:41:37.226Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2602944200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Get user with id \u003d 6",
+        "description": "",
+        "id": "user-api-verifications;get-user-with-id-\u003d-6",
+        "after": [
+          {
+            "result": {
+              "duration": 931678600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user service is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_service_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 150902500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I fetch the information about user with id 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 43
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.i_fetch_the_information_about_user_with_id(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17546000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user has a email \"tracey.ramos@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tracey.ramos@reqres.in\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_has_a_email(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-16T09:41:40.938Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4482387700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioSetUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Get user with id \u003d 5",
+        "description": "",
+        "id": "user-api-verifications;get-user-with-id-\u003d-5",
+        "after": [
+          {
+            "result": {
+              "duration": 1146681100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.EtsySteps.scenarioTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 502600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user service is up and running",
+            "match": {
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_service_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 220091000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fetch the information about user with id 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 43
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.i_fetch_the_information_about_user_with_id(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22559300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user has a email \"charles.morris@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"charles.morris@reqres.in\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.qaupskilling.cucumber.stepdefs.RegresSteps.user_has_a_email(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "User API verifications",
+    "description": "",
+    "id": "user-api-verifications",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api/users_api.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

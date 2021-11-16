@@ -22,7 +22,7 @@ public class EtsySteps {
     private WebDriver driver;
     private EtsyPagePO landingPage;
 
-    @Before
+    @Before("@ui")
     public void scenarioSetUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\mhanderek\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -32,7 +32,7 @@ public class EtsySteps {
     }
 
 
-    @After
+    @After("@ui")
     public void scenarioTearDown() {
         driver.quit();
     }

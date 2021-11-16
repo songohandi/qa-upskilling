@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: selenium.google.SampleGoogleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.214 s <<< FAILURE! - in selenium.google.SampleGoogleTest
+shouldOpenGooglePageAndSearchForSelenium  Time elapsed: 0.201 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at selenium.google.SampleGoogleTest.shouldOpenGooglePageAndSearchForSelenium(SampleGoogleTest.java:25)
+

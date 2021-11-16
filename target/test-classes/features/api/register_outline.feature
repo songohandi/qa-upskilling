@@ -1,3 +1,4 @@
+@api
 Feature: Register user
 
   Scenario Outline: Given User have been registered successfully
@@ -6,6 +7,7 @@ Feature: Register user
     Then registration "<success>" completed
 
     Examples:
-      | email                    | password    | success |
-      | eve.holt@reqres.in       | machine gun | have been |
-      | eve.holt@reqres.in       |             | have not been |
+      | email              | password    | success       |
+      | eve.holt@reqres.in | machine gun | have been     |
+      | eve.holt@reqres.in |             | have not been |
+      |                    | machinegun  | have not been |

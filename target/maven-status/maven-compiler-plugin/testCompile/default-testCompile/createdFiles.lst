@@ -1,0 +1,9 @@
+com\qaupskilling\cucumber\stepdefs\StepDefinitions.class
+com\qaupskilling\cucumber\stepdefs\EtsySteps.class
+com\qaupskilling\cucumber\pageObjects\EtsyPagePO.class
+com\qaupskilling\cucumber\model\Registration.class
+com\qaupskilling\cucumber\model\UserResponse.class
+com\qaupskilling\cucumber\stepdefs\RegresSteps.class
+selenium\google\SampleGoogleTest.class
+com\qaupskilling\cucumber\runners\CucumberSampleTestRunner.class
+com\qaupskilling\cucumber\model\User.class
